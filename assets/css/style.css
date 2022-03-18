@@ -5,48 +5,132 @@
 } */
 
 /*(1) Your answer goes below here for question #1 please use the border below */
-/* border: 3px solid #ffcc5c; */
-
-
+.question1 {
+  border: 3px solid #ffcc5c; 
+  display: flex;
+  justify-content: space-evenly;
+}
+.answer1 {
+  flex-grow: 1;
+}
 /*(2) Your answer goes below here for question #2 please use the border below */
 /* border: 3px solid #1f2546; */
-
-
+.question2 {
+  border: 3px solid #1f2546;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 800px) {
+  .answer2 {
+    flex-grow: 1;
+  }
+}
 /*(3) Your answer goes below here for question #3 please use the border below */
 /* border: 3px solid #e31c79; */
-
+.question3 {
+  border: 3px solid #e31c79;
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 /*(4) Your answer goes below here for question #4 please use the border below */
 /* border: 3px solid #e33618; */
-
+.question4{
+  border: 3px solid #e33618;
+  display: flex;
+  flex-direction: column;
+}
+/* Used for questions 4 5 and 6 */
+.flex-end {
+  align-self: flex-end;
+}
+.flex-start {
+  align-self: flex-start;
+}
+.Search4 {
+  align-self: center;
+}
 
 /*(5) Your answer goes below here for question #5 please use the border below */
 /* border: 3px solid #1f2546; */
+.question5 {
+  border: 3px solid #1f2546;
+  display: flex;
+  flex-direction : column;
+}
 
+.Search5 {
+  align-self: flex-start;
+}
 
 /*(6) Your answer goes below here for question #6 please use the border below */
-/* border: 3px solid #91d2e0 */
-
-
+.question6 {
+  border: 3px solid #91d2e0;
+  display: flex;
+  flex-direction: column;
+}
+.Search6 {
+  flex-grow: 1;
+}
 /*(7) Your answer goes below here for question #7 please use the border below */
-/* border: 3px solid #139dc2; */
-
+.question7 {
+  border: 3px solid #139dc2;
+  display: grid;
+  font-size: 0;
+  grid-template-columns: repeat(7, 1fr);
+  overflow: auto;
+}
 
 /*(8) Your answer goes below here for question #8 please use the border & background below */
 /* border: 3px solid #7b8ac7; */
 /* background-color: #bad3e2; */
-
+.question8 {
+  border: 3px solid #7b8ac7; 
+  background-color: #bad3e2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+}
 
 /*(9) Your answer goes below here for question #9 please use the border & background below */
-/* border: 3px solid #7b8ac7; */
-/* background-color: #bad3e2; */
+.question9 {
+  border: 3px solid #7b8ac7;
+  background-color: #bad3e2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(6, 1fr);
 
+}
 
 /*(10) Your answer goes below here for question #10 please use the border & background below */
-/* border: 3px solid #b8f9df; */
-/* background-color: #bad3e2; */
 
+.question10{
+  border: 3px solid #b8f9df;
+  background-color: #bad3e2;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+}
 
 /*(11) Your answer goes below here for question #11 please use the border & background below */
-/* border: 3px solid #7f798a; */
-/* background-color: #bad3e2; */
+
+.question11 {
+  border: 3px solid #7f798a;
+  background-color: #bad3e2;
+  display: grid;
+  grid-template-areas: 
+  "header header header header header header header"
+  "main aside aside aside aside aside aside "
+  "footer footer footer footer footer footer footer"
+}
+header {
+  grid-area: header;
+}
+aside {
+  grid-area: main;
+}
+main {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
